@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "241898365422",
+    "firebase_url": "https://stackoverflow-13098.firebaseio.com",
+    "project_id": "stackoverflow-13098",
+    "storage_bucket": "stackoverflow-13098.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241898365422:android:48b9c01fca7f3404",
+        "android_client_info": {
+          "package_name": "com.example.mehdi.stackoverflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241898365422-grj2fh7mujpttl2hm5bi72sopqv6dse8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT7KfUIfloNQ-zlwsudE3vH_uGBTxH7GI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

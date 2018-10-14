@@ -2,68 +2,87 @@
 package com.example.mehdi.stackoverflow.Pojos;
 
 import com.google.gson.annotations.SerializedName;
+import com.google.gson.annotations.Expose;
+
 
 public class Owner {
 
-    @SerializedName("display_name")
-    private String mDisplayName;
-    @SerializedName("link")
-    private String mLink;
-    @SerializedName("profile_image")
-    private String mProfileImage;
     @SerializedName("reputation")
-    private Long mReputation;
+    @Expose
+    private Integer reputation;
     @SerializedName("user_id")
-    private Long mUserId;
+    @Expose
+    private Integer userId;
     @SerializedName("user_type")
-    private String mUserType;
+    @Expose
+    private String userType;
+    @SerializedName("profile_image")
+    @Expose
+    private String profileImage;
+    @SerializedName("display_name")
+    @Expose
+    private String displayName;
+    @SerializedName("link")
+    @Expose
+    private String link;
+    @SerializedName("accept_rate")
+    @Expose
+    private Integer acceptRate;
 
-    public String getDisplayName() {
-        return mDisplayName;
+    public Integer getReputation() {
+        return reputation;
     }
 
-    public void setDisplayName(String displayName) {
-        mDisplayName = displayName;
+    public void setReputation(Integer reputation) {
+        this.reputation = reputation;
     }
 
-    public String getLink() {
-        return mLink;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setLink(String link) {
-        mLink = link;
-    }
-
-    public String getProfileImage() {
-        return mProfileImage;
-    }
-
-    public void setProfileImage(String profileImage) {
-        mProfileImage = profileImage;
-    }
-
-    public Long getReputation() {
-        return mReputation;
-    }
-
-    public void setReputation(Long reputation) {
-        mReputation = reputation;
-    }
-
-    public Long getUserId() {
-        return mUserId;
-    }
-
-    public void setUserId(Long userId) {
-        mUserId = userId;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getUserType() {
-        return mUserType;
+        return userType;
     }
 
     public void setUserType(String userType) {
-        mUserType = userType;
+        this.userType = userType;
+    }
+
+    public String getProfileImage() {
+        return profileImage;
+    }
+
+    public void setProfileImage(String profileImage) {
+        this.profileImage = profileImage;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public Integer getAcceptRate() {
+        return acceptRate;
+    }
+
+    public void setAcceptRate(Integer acceptRate) {
+        this.acceptRate = acceptRate;
     }
 
 }

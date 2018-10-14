@@ -1,132 +1,175 @@
 
 package com.example.mehdi.stackoverflow.Pojos;
-
 import java.util.List;
-
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
 
 public class Item {
 
-    @SerializedName("accepted_answer_id")
-    private Long mAcceptedAnswerId;
-    @SerializedName("answer_count")
-    private Long mAnswerCount;
-    @SerializedName("creation_date")
-    private Long mCreationDate;
-    @SerializedName("is_answered")
-    private Boolean mIsAnswered;
-    @SerializedName("last_activity_date")
-    private Long mLastActivityDate;
-    @SerializedName("link")
-    private String mLink;
-    @SerializedName("owner")
-    private Owner mOwner;
-    @SerializedName("question_id")
-    private Long mQuestionId;
-    @SerializedName("score")
-    private Long mScore;
     @SerializedName("tags")
-    private List<String> mTags;
-    @SerializedName("title")
-    private String mTitle;
+    @Expose
+    private List<String> tags = null;
+    @SerializedName("owner")
+    @Expose
+    private Owner owner;
+    @SerializedName("is_answered")
+    @Expose
+    private Boolean isAnswered;
     @SerializedName("view_count")
-    private Long mViewCount;
-
-    public Long getAcceptedAnswerId() {
-        return mAcceptedAnswerId;
-    }
-
-    public void setAcceptedAnswerId(Long acceptedAnswerId) {
-        mAcceptedAnswerId = acceptedAnswerId;
-    }
-
-    public Long getAnswerCount() {
-        return mAnswerCount;
-    }
-
-    public void setAnswerCount(Long answerCount) {
-        mAnswerCount = answerCount;
-    }
-
-    public Long getCreationDate() {
-        return mCreationDate;
-    }
-
-    public void setCreationDate(Long creationDate) {
-        mCreationDate = creationDate;
-    }
-
-    public Boolean getIsAnswered() {
-        return mIsAnswered;
-    }
-
-    public void setIsAnswered(Boolean isAnswered) {
-        mIsAnswered = isAnswered;
-    }
-
-    public Long getLastActivityDate() {
-        return mLastActivityDate;
-    }
-
-    public void setLastActivityDate(Long lastActivityDate) {
-        mLastActivityDate = lastActivityDate;
-    }
-
-    public String getLink() {
-        return mLink;
-    }
-
-    public void setLink(String link) {
-        mLink = link;
-    }
-
-    public Owner getOwner() {
-        return mOwner;
-    }
-
-    public void setOwner(Owner owner) {
-        mOwner = owner;
-    }
-
-    public Long getQuestionId() {
-        return mQuestionId;
-    }
-
-    public void setQuestionId(Long questionId) {
-        mQuestionId = questionId;
-    }
-
-    public Long getScore() {
-        return mScore;
-    }
-
-    public void setScore(Long score) {
-        mScore = score;
-    }
+    @Expose
+    private Integer viewCount;
+    @SerializedName("answer_count")
+    @Expose
+    private Integer answerCount;
+    @SerializedName("score")
+    @Expose
+    private Integer score;
+    @SerializedName("last_activity_date")
+    @Expose
+    private Integer lastActivityDate;
+    @SerializedName("creation_date")
+    @Expose
+    private Integer creationDate;
+    @SerializedName("last_edit_date")
+    @Expose
+    private Integer lastEditDate;
+    @SerializedName("question_id")
+    @Expose
+    private Integer questionId;
+    @SerializedName("link")
+    @Expose
+    private String link;
+    @SerializedName("title")
+    @Expose
+    private String title;
+    @SerializedName("accepted_answer_id")
+    @Expose
+    private Integer acceptedAnswerId;
+    @SerializedName("bounty_amount")
+    @Expose
+    private Integer bountyAmount;
+    @SerializedName("bounty_closes_date")
+    @Expose
+    private Integer bountyClosesDate;
 
     public List<String> getTags() {
-        return mTags;
+        return tags;
     }
 
     public void setTags(List<String> tags) {
-        mTags = tags;
+        this.tags = tags;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
+    }
+
+    public Boolean getIsAnswered() {
+        return isAnswered;
+    }
+
+    public void setIsAnswered(Boolean isAnswered) {
+        this.isAnswered = isAnswered;
+    }
+
+    public Integer getViewCount() {
+        return viewCount;
+    }
+
+    public void setViewCount(Integer viewCount) {
+        this.viewCount = viewCount;
+    }
+
+    public Integer getAnswerCount() {
+        return answerCount;
+    }
+
+    public void setAnswerCount(Integer answerCount) {
+        this.answerCount = answerCount;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
+    }
+
+    public Integer getLastActivityDate() {
+        return lastActivityDate;
+    }
+
+    public void setLastActivityDate(Integer lastActivityDate) {
+        this.lastActivityDate = lastActivityDate;
+    }
+
+    public Integer getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(Integer creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public Integer getLastEditDate() {
+        return lastEditDate;
+    }
+
+    public void setLastEditDate(Integer lastEditDate) {
+        this.lastEditDate = lastEditDate;
+    }
+
+    public Integer getQuestionId() {
+        return questionId;
+    }
+
+    public void setQuestionId(Integer questionId) {
+        this.questionId = questionId;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 
     public String getTitle() {
-        return mTitle;
+        return title;
     }
 
     public void setTitle(String title) {
-        mTitle = title;
+        this.title = title;
     }
 
-    public Long getViewCount() {
-        return mViewCount;
+    public Integer getAcceptedAnswerId() {
+        return acceptedAnswerId;
     }
 
-    public void setViewCount(Long viewCount) {
-        mViewCount = viewCount;
+    public void setAcceptedAnswerId(Integer acceptedAnswerId) {
+        this.acceptedAnswerId = acceptedAnswerId;
+    }
+
+    public Integer getBountyAmount() {
+        return bountyAmount;
+    }
+
+    public void setBountyAmount(Integer bountyAmount) {
+        this.bountyAmount = bountyAmount;
+    }
+
+    public Integer getBountyClosesDate() {
+        return bountyClosesDate;
+    }
+
+    public void setBountyClosesDate(Integer bountyClosesDate) {
+        this.bountyClosesDate = bountyClosesDate;
     }
 
 }

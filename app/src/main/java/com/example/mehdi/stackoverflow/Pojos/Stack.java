@@ -1,12 +1,9 @@
 package com.example.mehdi.stackoverflow.Pojos;
-
 import java.util.List;
-
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Stack{
+public class Stack {
 
     @SerializedName("items")
     @Expose
